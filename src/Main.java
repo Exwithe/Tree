@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
             int l = 1;
-            int dir = 1; //warum das +?
+            int dir = 1; 
             for(int enter = 0; enter < 6; enter++) { // die beiden fors von line 8, 19 sehen doch gleich aus nicht kann man das nicht noch abändern
 
 
@@ -13,7 +13,7 @@ public class Main {
                 }
                 l = l +  dir; //man l = l + dir; anders schreiben kann
                 System.out.println();
-                
+
             }
             dir = -1; // warum nicht dir 1 lassen und einfach
             for(int i = 0; i < 7; i++) {
