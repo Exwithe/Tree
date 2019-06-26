@@ -16,10 +16,6 @@ public class Main {
             else { l++;
             }
         }
-
-
     }
-
-
 }
 
