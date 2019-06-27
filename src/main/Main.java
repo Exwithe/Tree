@@ -1,14 +1,16 @@
 package main;
 
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
+
 public class Main {
-  public static void main(String[] args) {
-    int height = 20;
-    for (int lineCount = 1; lineCount < height * 2; lineCount++) {
-      int lineLength = height - Math.abs(lineCount - height);
-      for (int charCount = 1; charCount <= lineLength; charCount++) {
-        System.out.print("*");
-      }
-      System.out.println();
-    }
+  public static void main(String[] args) throws FileNotFoundException {
+    int height = 10;
+    TreeWriter consoleTreeWriter = new TreeWriter();
+    consoleTreeWriter.printTree(height);
+    consoleTreeWriter.printTree(height + 1);
+
+    TreeWriter fileTreeWriter = new TreeWriter(new PrintStream("./text.txt"));
+    fileTreeWriter.printTree(height);
   }
 }
